@@ -1,0 +1,112 @@
+:root {
+   --color-dark-blue: #152436;
+   --color-medium-blue: #273c57;
+   --color-light-blue: #3e56c9;
+   --color-white: #ffffff;
+   --color-white-1: #f4f9fa;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+}
+
+body {
+   font-family: "Open Sans", sans-serif;
+   font-size: 1.5rem;
+   font-weight: 400;
+   line-height: 1.6;
+   color: var(--color-white-1);
+   background-color: var(--color-medium-blue);
+}
+
+a:link,
+a:visited {
+   color: var(--color-light-blue);
+   text-decoration: none;
+}
+
+a:hover,
+a:active {
+   text-decoration: underline;
+}
+
+.main {
+   min-height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container {
+   max-width: 110rem;
+   padding: 2rem 1rem;
+}
+
+.stats-card {
+   background-color: var(--color-dark-blue);
+   width: 100%;
+   padding: 4.5rem;
+   border-radius: 1rem;
+   box-shadow: 0 0 20px 2px rgba(21, 36, 54, 0.15);
+   text-align: center;
+}
+
+.stats-card__heading {
+   font-size: 2.5rem;
+   padding: 2rem;
+   margin-bottom: 2.5rem;
+}
+
+.stats-card__main-data {
+   display: flex;
+   justify-content: space-between;
+   gap: 4.5rem;
+   padding: 2rem;
+   margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 50rem) {
+   .stats-card__main-data {
+      flex-direction: column;
+      gap: 3.5rem;
+      padding: 2rem;
+      margin-bottom: 4rem;
+   }
+}
+
+.stats-card__numbers {
+   font-size: 4.5rem;
+   font-weight: 700;
+   margin-bottom: 2rem;
+   color: var(--color-white);
+}
+
+.stats-card__info {
+   padding: 2rem 0;
+}
+
+.attribution {
+   color: var(--color-white);
+   font-size: 1.3rem;
+   text-align: center;
+   margin: 2rem 1rem;
+}
+
+.attribution a:link,
+.attribution a:visited {
+   text-decoration: underline;
+   color: var(--color-white);
+   font-weight: 500;
+}
+
+.attribution a:hover,
+.attribution a:active {
+   text-decoration: none;
+}
