@@ -18,13 +18,7 @@ This Simple Stats component has been built using HTML and CSS. I have used BEM (
 
 ## Screenshot
 
-**Desktop version:**
-
 ![Desktop Version of Simple Stats Component](https://github.com/SandipanIO/iCodeThis-projects/blob/main/simple-stats/screenshots/simple-stats-desktop-version.png)
-
-**Mobile version:**
-
-![Mobile Version of Simple Stats Component]([https://github.com/SandipanIO/frontend-mentor-projects/blob/main/qr-code-component/screenshots/qr-code-component-mobile-version.jpg](https://github.com/SandipanIO/iCodeThis-projects/blob/main/simple-stats/screenshots/simple-stats-mobile-version.jpg)
 
 ## Links
 
