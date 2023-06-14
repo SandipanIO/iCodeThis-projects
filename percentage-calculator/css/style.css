@@ -1,0 +1,118 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;  
+}
+
+body {
+   font-family: sans-serif;
+   font-size: calc(16rem / 16);
+   font-weight: 400;
+   line-height: 1.4;
+   background-color: #f2f2f2;
+   color: #333;
+   min-height: 100vh;
+   padding-block: 1em;
+}
+
+input,
+button {
+   font-size: inherit;
+   font-family: inherit;
+}
+
+.main {
+   min-height: 90vh;
+   display: grid;
+   place-items: center;
+}
+
+.calculator {
+   background-color: #fff;
+   max-width: calc(600rem / 16);
+   width: 100%;
+   padding: 3em;
+   border-radius: 2px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+   text-align: center;
+}
+
+.calculator__heading {
+   font-size: calc(20rem / 16);
+   color: #718aa5;
+}
+
+.calculator__text {
+   font-size: calc(13rem / 16);
+   color: #8b99a8;
+   padding-block: 1em;
+   margin-bottom: 0.5em;
+}
+
+.calculator__percentage {
+   padding-block:2em;
+   border-top: 1px solid #ddd;
+   border-bottom: 1px solid #ddd;
+}
+
+.percent-calc__text {
+   padding-block: 2em;
+}
+
+.percent-calc__input {
+   text-align: center;
+   line-height: 2;
+   width: calc(150rem / 16);
+   border: none;
+   border-bottom: 1px solid #8b99a8;
+   outline: none;
+}
+
+.btn {
+   color: #f2f2f2;
+   background-color: #8e9fee;
+   font-size: calc(15rem / 16);
+   font-weight: 600;
+   padding: 0.8em 3em;
+   border: none;
+   border-radius: 2px;
+   cursor: pointer;
+   opacity: 1;
+   transition: all 0.2s;
+}
+
+.btn:hover {
+   opacity: 0.9;
+   color: #fff;
+}
+
+.percent-calc__result {
+   display: none;
+   font-size: calc(18rem / 16);
+   font-weight: 600;
+   background-color: rgba(142, 160, 238, 0.1);
+   padding: 1.5em;
+   margin-top: 2em;
+   border-radius: 2px;
+}
+
+.calculator__link:link,
+.calculator__link:visited {
+   color: #4e5ea6;
+}
+
+.calculator__link:hover,
+.calculator__link:active {
+   text-decoration: none;
+}
+
+@media (max-width: 640px) {
+   .calculator {
+      width: 90%;
+      padding: 1.5em;
+   }
+
+   .percent-calc__input {
+      width: calc(50rem / 16);
+   }
+}
