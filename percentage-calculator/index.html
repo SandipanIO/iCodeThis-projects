@@ -22,9 +22,9 @@
             <form id="percent-calc" class="percent-calc" action="#" method="post">
                <p class="percent-calc__text">
                   What is 
-                  <input type="number" name="percent" id="percent" class="percent-calc__input" required>
+                  <input type="number" min="0" step="0.01" name="percent" id="percent" class="percent-calc__input" required>
                   % of
-                  <input type="number" name="number" id="number" class="percent-calc__input" required>
+                  <input type="number" min="0" step="0.01" name="number" id="number" class="percent-calc__input" required>
                   ?
                </p>
                <button type="submit" class="btn">Calculate</button>
@@ -32,10 +32,14 @@
             <p id="result" class="percent-calc__result"></p>
          </div>
          <p class="calculator__text">
-            Check out similar <a class="calculator__link" href="#">percentage calculators</a>.
+            Check out similar <a class="link" href="#">percentage calculators</a>.
          </p>
       </section>
    </main>
+   <footer class="attribution">
+      Challenge by <a class="link" href="https://icodethis.com" target="_blank">iCodeThis</a>
+      &#124; Coded by <a class="link" href="https://twitter.com/SandipanIO" target="_blank">Sandipan Mukherjee</a>.
+   </footer>
 
    <script src="js/script.js"></script>
 </body>
